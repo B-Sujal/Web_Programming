@@ -1,57 +1,101 @@
- <sDOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Threads - Fashion Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .intro {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            color: #35424a;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #e8491d;
+        }
+    </style>
 </head>
 <body>
-    <div class="main"> 
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Sujal</h2>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a> </li>
-                    <li><a href="#">ABOUT</a> </li>
-                    <li><a href="#">SERVICE</a> </li>
-                    <li><a href="#">DESIGN</a> </li>
-                    <li><a href="#">CONTACT</a> </li>
-                </ul>
-            </div>
-                <div class="search">
-                    <input class="srch" type="search" name="" placeholder="Type to Text">
-                    <a href="#"> <button class="btn"> Search</button></a>
-                </div>
+    <header>
+        <h1>Stylish Threads</h1>
+    </header>
 
+    <div class="fashion wear">
+        <section class="intro">
+            <h2>Welcome to Stylish Threads</h2>
+            <p>Discover the latest fashion trends and timeless classics at Stylish Threads. We offer a curated selection of high-quality clothing and accessories to suit every style and occasion.</p>
+        </section>
+
+        <h2>Our Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="Polo T-shirts.jpg" alt="Polo T-Shirt">
+                <h3><a href="product1.html">Polo T-Shirt</a></h3>
+                <p>$19.99</p>
+            </div>
+            <div class="product-item">
+                <img src="SlimStraightJean.jpg" alt="Slim Straight Jeans">
+                <h3><a href="product2.html">Slim Straight Jeans</a></h3>
+                <p>$49.99</p>
+            </div>
+            <div class="product-item">
+                <img src="SummerDress.jpg" alt="Summer Dress">
+                <h3><a href="product3.html">Summer Dress</a></h3>
+                <p>$39.99</p>
+            </div>
+            <div class="product-item">
+                <img src="Sneakers.jpg" alt="Casual Sneakers">
+                <h3><a href="product4.html">Casual Sneakers</a></h3>
+                <p>$59.99</p>
+            </div>
+            <div class="product-item">
+                <img src="DenimJacket.jpg" alt="Denim Jacket">
+                <h3><a href="product5.html">Denim Jacket</a></h3>
+                <p>$69.99</p>
+            </div>
         </div>
-        <div class="content">
-            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
-            <p class="par"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 <br> Neque, odit repudiandae! Voluptates, ducimus! Labore, quia qui? Cum, natus expedita sunt,
-                 <br>recusandae non voluptates consectetur deleniti tempora quasi dignissimos voluptatibus quod! </p>
-
-                 <br><button class="cn"> <a href="#">Join Us</a></button>
-
-                 <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email">
-                    <input type="password" name=" " placeholder="Enter Password">
-                    <button class="btnn"><a href="#">Login</a></button>
-
-                    <p class="link">Don't have an account<br>
-                    <a href="#">Sign up</a> here</a></p>
-                    <p class="liw">Log in with</p>
-
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
-                    </div>
-                 </div>
-        </div>  
-    </div>    
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</html> 
+    </div>
+</body>
+</html>
